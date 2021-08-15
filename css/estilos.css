@@ -1,3 +1,8 @@
+body {
+  background-color: seashell;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
 body nav {
   background: #009685;
   background: -webkit-gradient(linear, left top, right top, from(#009685), to(#4d9a39));
@@ -22,6 +27,24 @@ body section {
   padding: 2px;
 }
 
+body section article {
+  margin: 4px;
+  border: black 2px;
+  padding: 5px;
+}
+
+body section article form .botonComprar {
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #ffffff !important;
+  background-color: #1883ba;
+  border-radius: 6px;
+  border: 2px solid #0016b0;
+  cursor: pointer;
+}
+
 body footer {
   background: #009685;
   background: -webkit-gradient(linear, left top, right top, from(#009685), to(#4d9a39));
@@ -40,9 +63,9 @@ body aside {
   border-color: black;
 }
 
-body aside .logo__Kavanag {
-  width: 100px;
-  height: 100px;
+body aside .logoKavanag {
+  width: 90px;
+  height: 90px;
   -webkit-animation-name: titilo;
           animation-name: titilo;
   -webkit-animation-iteration-count: infinite;
@@ -53,5 +76,44 @@ body aside .logo__Kavanag {
           animation-duration: 3s;
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
+}
+
+body aside .logoCannon {
+  width: 90px;
+  height: 90px;
+  -webkit-animation-name: titilo;
+          animation-name: titilo;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+@-webkit-keyframes titilo {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes titilo {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 /*# sourceMappingURL=estilos.css.map */

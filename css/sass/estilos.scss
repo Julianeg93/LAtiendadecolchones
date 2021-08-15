@@ -1,5 +1,7 @@
 @import "bases/colores";
  body {  
+     background-color: seashell;
+     font-family: 'Roboto Condensed', sans-serif;
 nav {
 
         background: $verdemarin;
@@ -21,6 +23,25 @@ nav {
         margin: 2px;
         border: 2px;
         padding: 2px;    
+
+     article {
+         margin: 4px;
+         border: black 2px;
+         padding: 5px;
+         form {
+            .botonComprar {
+                text-decoration: none;
+                padding: 10px;
+                font-weight: 600;
+                font-size: 20px;
+                color: #ffffff!important;
+                background-color: #1883ba;
+                border-radius: 6px;
+                border: 2px solid #0016b0;
+                cursor: pointer;
+            }
+        }
+    }
     }
     footer {
         background: rgb(0,150,133);
@@ -36,15 +57,33 @@ aside {
     padding: 2px;
     border: 2px;
     border-color: black;
-.logo__Kavanag { width: 100px;
-               height: 100px;
+.logoKavanag { width: 90px;
+               height: 90px;
                animation-name: titilo;
                animation-iteration-count: infinite;
                animation-timing-function: ease-in;
                animation-duration: 3s;
                animation-delay: 0s;
             }
-
+.logoCannon { width: 90px;
+    height: 90px;
+    animation-name: titilo;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 3s;
+    animation-delay: 0s;
+}
+@keyframes titilo { 
+    0% { 
+        opacity: 0;
+       }
+   50% {
+       opacity: 1;
+   }
+   100% {
+       opacity: 0;
+       }
+   }
         }
 
 }
